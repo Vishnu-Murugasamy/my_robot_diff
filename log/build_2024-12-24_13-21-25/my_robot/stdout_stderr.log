@@ -1,0 +1,38 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/rosdev/ros2_ws/build/my_robot
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/launch/gazebo_launch.py
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/launch/launch_sim.launch.py
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/launch/my_robot.launch.py
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/rviz/car.rviz
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/rviz/urdf.rviz
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/urdf/car.urdf
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/urdf/inertial_macros.xacro
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/urdf/my_robot.urdf.xacro
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/urdf/robot_core.xacro
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/urdf/robot_core_1.xacro
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/worlds/empty.world
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/ament_index/resource_index/package_run_dependencies/my_robot
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/ament_index/resource_index/parent_prefix_path/my_robot
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/environment/ament_prefix_path.sh
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/environment/ament_prefix_path.dsv
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/environment/path.sh
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/environment/path.dsv
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/local_setup.bash
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/local_setup.sh
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/local_setup.zsh
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/local_setup.dsv
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/package.dsv
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/ament_index/resource_index/packages/my_robot
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/cmake/my_robotConfig.cmake
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/cmake/my_robotConfig-version.cmake
+-- Symlinking: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/package.xml

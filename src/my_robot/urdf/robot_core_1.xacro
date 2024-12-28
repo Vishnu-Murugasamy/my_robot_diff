@@ -1,0 +1,455 @@
+<?xml version="1.0"?>
+<robot name="car" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:include filename="inertial_macros_1.xacro"/>
+
+  <!-- Base Link -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size=".001 .001 .001"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size=".001 .001 .001"/>
+      </geometry>
+    </collision>
+    <xacro:inertial_box mass="0.2" x=".001" y=".001" z=".001">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:inertial_box>
+  </link>
+  <gazebo reference="base_link">
+    <material>Gazebo/White</material>
+  </gazebo>
+
+  <!-- Right Front Steering -->
+  <joint name="base_link_to_right_front_steering" type="revolute">
+    <parent link="base_link"/>
+    <child link="right_front_steering"/>
+    <origin xyz="0.326 -0.125 0.054"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.87" upper="0.87" effort="1000" velocity="1000"/>
+  </joint>
+
+  <link name="right_front_steering">
+    <visual>
+      <geometry>
+        <box size=".001 .001 .001"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size=".001 .001 .001"/>
+      </geometry>
+    </collision>
+    <xacro:inertial_box mass="0.1" x=".001" y=".001" z=".001">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:inertial_box>
+  </link>
+  <gazebo reference="right_front_steering">
+    <material>Gazebo/Orange</material>
+  </gazebo>
+
+  <!-- Right Front Wheel -->
+  <joint name="right_front_steering_to_right_front_wheel" type="continuous">
+    <parent link="right_front_steering"/>
+    <child link="right_front_wheel"/>
+    <origin xyz="0.0 0.0 0.0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <link name="right_front_wheel">
+    <visual>
+      <geometry>
+        <cylinder length="0.043" radius="0.054"/>
+      </geometry>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.043" radius="0.054"/>
+      </geometry>
+    </collision>
+    <xacro:inertial_cylinder mass="0.15" length="0.043" radius="0.054">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:inertial_cylinder>
+  </link>
+  <gazebo reference="right_front_wheel">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <!-- Left Front Steering -->
+  <joint name="base_link_to_left_front_steering" type="revolute">
+    <parent link="base_link"/>
+    <child link="left_front_steering"/>
+    <origin xyz="0.326 0.125 0.054"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.87" upper="0.87" effort="1000" velocity="1000"/>
+  </joint>
+
+  <link name="left_front_steering">
+    <visual>
+      <geometry>
+        <box size=".001 .001 .001"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size=".001 .001 .001"/>
+      </geometry>
+    </collision>
+    <xacro:inertial_box mass="0.1" x=".001" y=".001" z=".001">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:inertial_box>
+  </link>
+  <gazebo reference="left_front_steering">
+    <material>Gazebo/Orange</material>
+  </gazebo>
+
+  <!-- Left Front Wheel -->
+  <joint name="left_front_steering_to_left_front_wheel" type="continuous">
+    <parent link="left_front_steering"/>
+    <child link="left_front_wheel"/>
+    <origin xyz="0.0 0.0 0.0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <link name="left_front_wheel">
+    <visual>
+      <geometry>
+        <cylinder length="0.043" radius="0.054"/>
+      </geometry>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.043" radius="0.054"/>
+      </geometry>
+    </collision>
+    <xacro:inertial_cylinder mass="0.15" length="0.043" radius="0.054">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:inertial_cylinder>
+  </link>
+  <gazebo reference="left_front_wheel">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <!-- Body -->
+  <joint name="base_link_to_body" type="revolute">
+    <parent link="base_link"/>
+    <child link="body"/>
+    <origin xyz="0 0 0.054"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-0.065" upper="0.065" effort="1000" velocity="1000"/>
+  </joint>
+
+  <link name="body">
+    <visual>
+      <geometry>
+        <box size="0.58 0.2 0.01"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.12 0 0.054"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.58 0.2 0.01"/>
+      </geometry>
+    </collision>
+    <xacro:inertial_box mass="0.8" x="0.58" y="0.2" z="0.01">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:inertial_box>
+  </link>
+  <gazebo reference="body">
+    <material>Gazebo/White</material>
+  </gazebo>
+
+  <!-- Rear Wheels -->
+  <joint name="body_to_right_rear_wheel" type="continuous">
+    <parent link="body"/>
+    <child link="right_rear_wheel"/>
+    <origin xyz="0 -0.125 0.0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <link name="right_rear_wheel">
+    <visual>
+      <geometry>
+        <cylinder length="0.043" radius="0.054"/>
+      </geometry>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.043" radius="0.054"/>
+      </geometry>
+    </collision>
+    <xacro:inertial_cylinder mass="0.15" length="0.043" radius="0.054">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:inertial_cylinder>
+  </link>
+  <gazebo reference="right_rear_wheel">
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <joint name="body_to_left_rear_wheel" type="continuous">
+    <parent link="body"/>
+    <child link="left_rear_wheel"/>
+    <origin xyz="0 0.125 0.0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <link name="left_rear_wheel">
+    <visual>
+      <geometry>
+        <cylinder length="0.043" radius="0.054"/>
+      </geometry>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.043" radius="0.054"/>
+      </geometry>
+    </collision>
+    <xacro:inertial_cylinder mass="0.15" length="0.043" radius="0.054">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </xacro:inertial_cylinder>
+  </link>
+  <gazebo reference="left_rear_wheel">
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+</robot>
+
+
+
+
+<!-- 
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  >
+
+  <xacro:include filename="inertial_macros_1.xacro"/>
+
+  <material name="white">
+        <color rgba="1 1 1 1" />
+    </material>
+
+    <material name="orange">
+        <color rgba="1 0.3 0.1 1"/>
+    </material>
+
+    <material name="blue">
+        <color rgba="0.2 0.2 1 1"/>
+    </material>
+
+    <material name="black">
+        <color rgba="0 0 0 1"/>
+    </material>
+
+   <link name="base_link">
+    
+     <visual>
+      <geometry>
+        <box size =".001 .001 .001"/>
+      </geometry>
+      <material name="white"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </visual>
+    
+  </link>
+
+  <joint name="base_link_to_right_front_steering" type="revolute">
+    <parent link="base_link"/>
+    <child link="right_front_steering"/>
+    <origin xyz="0.326 -0.125 0.054"/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-0.87" upper="0.87" effort="1000" velocity="1000"/>
+  </joint>
+
+  <link name="right_front_steering">
+    <visual>
+      <geometry>
+        <box size =".001 .001 .001"/>
+      </geometry>
+      <material name="orange"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </visual>
+  </link>
+
+  <joint name="right_front_steering_to_right_front_wheel" type="continuous">
+    <parent link="right_front_steering"/>
+    <child link="right_front_wheel"/>
+    <origin xyz="0.0 0.0 0.0"/>
+    <axis   xyz="0 1 0"/>
+  </joint>
+
+  <link name="right_front_wheel">
+    <visual>
+      <geometry>
+        <cylinder length ="0.043" radius="0.054"/>
+      </geometry>
+      <material name="blue"/>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+    </visual>
+  </link>
+
+  <joint name="base_link_to_left_front_steering" type="revolute">
+    <parent link="base_link"/>
+    <child link="left_front_steering"/>
+    <origin xyz="0.326 0.125 0.054"/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-0.87" upper="0.87" effort="1000" velocity="1000"/>
+  </joint>
+
+  <link name="left_front_steering">
+    <visual>
+      <geometry>
+        <box size =".001 .001 .001"/>
+      </geometry>
+      <material name="orange"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </visual>
+  </link>
+
+  <joint name="left_front_steering_to_left_front_wheel" type="continuous">
+    <parent link="left_front_steering"/>
+    <child link="left_front_wheel"/>
+    <origin xyz="0.0 0.0 0.0"/>
+    <axis   xyz="0 1 0"/>
+  </joint>
+
+  <link name="left_front_wheel">
+    <visual>
+      <geometry>
+        <cylinder length ="0.043" radius="0.054"/>
+      </geometry>
+      <material name="blue"/>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+    </visual>
+  </link>
+
+  <joint name="base_link_to_body" type="revolute">
+    <parent link="base_link"/>
+    <child link="body"/>
+    <origin xyz="0 0 0.054"/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-0.065" upper="0.065" effort="1000" velocity="1000"/>
+  </joint>
+
+  <link name="body">
+    <visual>
+      <geometry>
+        <box size ="0.58 0.2 0.01"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.12 0 0.054"/>
+    </visual>
+  </link>
+
+  <joint name="body_to_right_rear_wheel" type="continuous">
+    <parent link="body"/>
+    <child link="right_rear_wheel"/>
+    <origin xyz="0 -0.125 0.0"/>
+    <axis   xyz="0 1 0"/>
+  </joint>
+
+  <link name="right_rear_wheel">
+    <visual>
+      <geometry>
+        <cylinder length ="0.043" radius="0.054"/>
+      </geometry>
+      <material name="black"/>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+    </visual>
+  </link>
+
+  <joint name="body_to_left_rear_wheel" type="continuous">
+    <parent link="body"/>
+    <child link="left_rear_wheel"/>
+    <origin xyz="0 0.125 0.0"/>
+    <axis   xyz="0 1 0"/>
+  </joint>
+
+  <link name="left_rear_wheel">
+    <visual>
+      <geometry>
+        <cylinder length ="0.043" radius="0.054"/>
+      </geometry>
+      <material name="black"/>
+      <origin rpy="1.57075 0 0" xyz="0 0 0"/>
+    </visual>
+  </link>
+
+</robot>
+-->
+
+<!-- 
+  <joint name="body_to_imu" type="fixed">
+    <parent link="body"/>
+    <child link="imu"/>
+    <origin xyz="0.236 0 0.082"/>
+  </joint>
+
+  <link name="imu">
+    <visual>
+      <geometry>
+        <box size =".01 .01 .01"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </visual>
+  </link>
+
+  <joint name="body_to_lidar" type="fixed">
+    <parent link="body"/>
+    <child link="lidar"/>
+    <origin xyz="0.339 0 0.107" rpy="0 0 3.1415926"/>
+  </joint>
+
+  <link name="lidar">
+    <visual>
+      <geometry>
+        <cylinder length ="0.020" radius="0.039"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </visual>
+  </link>
+
+  <joint name="body_to_realsense" type="fixed">
+    <parent link="body"/>
+    <child link="realsense"/>
+    <origin xyz="0.226 -0.044 0.177"/>
+  </joint>
+
+  -<origin xyz="0.226 -0.044 0.177"/>
+
+  <link name="realsense">
+    <visual>
+      <geometry>
+        <box size ="0.015 0.139 0.051"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.0075 0.044 -0.016"/>
+    </visual>
+  </link>
+
+  <joint name="body_to_camera_depth_optical_frame" type="revolute">
+    <parent link="body"/>
+    <child link="camera_depth_optical_frame"/>
+    <origin xyz="0.226 0.04 0.177" rpy="-1.57079 0 -1.57079"/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-0.001" upper="0.001" effort="1000" velocity="1000"/>
+  </joint>
+
+  -rpy="-1.57079 1.57079 0" 
+
+  <link name="camera_depth_optical_frame">
+    <visual>
+      <geometry>
+        <box size =".001 .001 .001"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </visual>
+  </link>
+  -->
+    

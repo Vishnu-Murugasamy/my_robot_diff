@@ -1,0 +1,145 @@
+1  colcon build
+    2  gedit ~/.bashrc
+    3  clear
+    4  source /opt/ros/humble/setup.bash
+    5  source install/setup.bash
+    6  ros2 launch my_robot gazebo_launch.py 
+    7  ros2 topic list
+    8  ros2 run tf2_tools view_frames
+    9  ros2 launch my_robot gazebo_launch.py 
+   10  colcon build
+   11  ros2 launch my_robot gazebo_launch.py 
+   12  colcon build
+   13  ros2 launch my_robot gazebo_launch.py 
+   14  colcon build
+   15  ros2 launch my_robot gazebo_launch.py 
+   16  rviz2
+   17  ros2 run tf2_tools view_frames
+   18  source /opt/ros/humble/setup.bash
+   19  source install/setup.bash
+   20  ros2 topic echo /tf
+   21  ros2 param list /robot_state_publisher
+   22  ros2 run tf2_ros static_transform_publisher 0 0 0 0 0 0 base_link world
+   23  sudo apt-get update
+   24  sudo apt-get install -y libgl1-mesa-glx libegl1-mesa libgles2-mesa
+   25  rviz2
+   26  ros2 topic list
+   27  rviz2
+   28  colcon build
+   29  rviz2
+   30  ros2 run tf2_tools view_frames
+   31  rviz2
+   32  ros2 run tf2_tools view_frames
+   33  ros2 run joint_state_publisher
+   34  ros2 run joint_state_publisher_gui joint_state_publisher_gui 
+   35  rviz2
+   36  cd ..
+   37  ls
+   38  cd ..
+   39  ls
+   40  grep | red
+   41  rviz2
+   42  ros2 launch my_robot gazebo_launch.py 
+   43  colcon build
+   44  ros2 launch my_robot gazebo_launch.py 
+   45  ros2 launch gazebo_ros gazebo.launch.py 
+   46  sudo apt install teleop_twist_keyboard
+   47  sudo apt install teleop
+   48  sudo apt install ros-humble-teleop-twist-keyboard
+   49  ros2 run teleop_twist_keyboard teleop_twist_keyboard 
+   50  ros2 run joint_state_publisher_gui joint_state_publisher_gui 
+   51  colcon build --symlink-install
+   52  ros2 launch my_robot gazebo_launch.py 
+   53  ros2 launch my_robot launch_sim.launch.py 
+   54  colcon build --symlink-install
+   55  ros2 launch my_robot launch_sim.launch.py 
+   56  ros2 launch my_robot launch_sim.launch.py use_sim_time:=true
+   57  ros2 launch my_robot launch_sim.launch.py 
+   58  colcon build --symlink-install
+   59  ros2 launch my_robot launch_sim.launch.py 
+   60  colcon build --symlink-install
+   61  ros2 launch my_robot launch_sim.launch.py 
+   62  colcon build --symlink-install
+   63  ros2 launch my_robot launch_sim.launch.py 
+   64  colcon build --symlink-install
+   65  ros2 launch my_robot launch_sim.launch.py 
+   66  colcon build --symlink-install
+   67  ros2 launch my_robot launch_sim.launch.py 
+   68  colcon build --symlink-install
+   69  ros2 launch my_robot launch_sim.launch.py 
+   70  ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.world 
+   71  colcon build --symlink-install
+   72  ros2 launch my_robot gazebo_launch.py 
+   73  ros2 launch my_robot gazebo_launch.py use_sim_time:=true
+   74  colcon build --symlink-install
+   75  ros2 launch my_robot launch_sim.launch_1.py 
+   76  colcon build --symlink-install
+   77  colcon build --symlink-install
+   78  colcon build
+   79  ros2 launch my_robot launch_sim.launch_1.py 
+   80  ros2 launch my_robot launch_sim.launch.py 
+   81  ros2 launch my_robot launch_sim.launch_1.py 
+   82  colcon build
+   83  ros2 launch my_robot launch_sim.launch_1.py 
+   84  ros2 launch my_robot gazebo_launch.py 
+   85  ros2 launch my_robot gazebo_launch_1.py 
+   86  ros2 launch my_robot launch_sim.launch_1.py 
+   87  colcon build
+   88  source install/setup.bash
+   89  colcon build
+   90  source install/setup.bash
+   91  colcon build --packages-select my_robot
+   92  ls install/my_robot/share/my_robot/launch
+   93  ros2 launch my_robot gazebo_launch_1.py 
+   94  ros2 launch gazebo_ros gazebo.launch.py 
+   95  ros2 run joint_state_publisher_gui joint_state_publisher_gui 
+   96  ros2 launch gazebo_ros gazebo.launch.py 
+   97  ros2 launch my_robot launch_sim.launch_1.py 
+   98  tail -f ~/.gazebo/logs/*.log
+   99  tail -f ~/.gazebo/logs/*.log
+  100  ros2 run tf2_tools view_frames
+  101  ros2 run gazebo_ros spawn_entity.py -topic robot_description -entity bot_name
+  102  rviz2
+  103  cd src/my_robot/urdf/
+  104  ros2 run xacro xacro my_robot_1.urdf.xacro > my_robot_2.urd
+  105  ros2 run gazebo_ros spawn_entity.py -entity my_bot -file ./my_robot_2.urdf
+  106  rviz2
+  107  colconcon build --packages-select my_robot
+  108  ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.world 
+  109  colconcon build --packages-select my_robot
+  110  colcon build --packages-select my_robot
+  111  ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.world 
+  112  colcon build --packages-select my_robot
+  113  ros2 launch my_robot launch_sim.launch_1.py 
+  114  ros2 launch my_robot launch_sim.launch_1.py \
+  115  ros2 launch my_robot launch_sim.launch_1.py 
+  116  colcon build --packages-select my_robot
+  117  ros2 launch my_robot launch_sim.launch_1.py 
+  118  ros2 launch my_robot gazebo_launch.py 
+  119  ros2 launch my_robot gazebo_launch_1.py 
+  120  ros2 launch my_robot launch_sim.launch_1.py 
+  121  ros2 run teleop_twist_keyboard teleop_twist_keyboard 
+  122  ros2 run joint_state_publisher_gui joint_state_publisher_gui 
+  123  ros2 topic
+  124  ros2 topic list
+  125  ros2 topic /scan
+  126  ros2 topic /scan -h
+  127  ros2 topic info /scan 
+  128  rviz2
+  129  colcon build --packages-select my_robot
+  130  ros2 launch my_robot launch_sim.launch.py 
+  131* ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.w
+  132  sudo apt install ros-humble-image-transport-pöugins
+  133  sudo apt install ros-humble-image-transport-plugins
+  134  sudo apt install ros-humble-rqt-imageview
+  135  sudo apt install ros-humble-rqt-image-view
+  136  ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.world 
+  137  ros2 run rqt_image_view rqt_image_view 
+  138  ros2 run teleop_twist_keyboard teleop_twist_keyboard 
+  139  colcon build --packages-select my_robot
+  140  ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.world 
+  141  colcon build --packages-select my_robot
+  142  ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.world 
+  143  colcon build --packages-select my_robot
+  144  ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.world 
+  145  colcon build --packages-select my_robot

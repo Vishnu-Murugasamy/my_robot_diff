@@ -1,0 +1,40 @@
+[0.049s] Invoking command in '/home/rosdev/ros2_ws/build/my_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rosdev/ros2_ws/build/my_robot -- -j8 -l8
+[0.201s] Invoked command in '/home/rosdev/ros2_ws/build/my_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rosdev/ros2_ws/build/my_robot -- -j8 -l8
+[0.245s] Invoking command in '/home/rosdev/ros2_ws/build/my_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rosdev/ros2_ws/build/my_robot
+[0.298s] -- Install configuration: ""
+[0.299s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/launch
+[0.300s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/launch/my_robot.launch.py
+[0.303s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/launch/gazebo_launch.py
+[0.306s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/config
+[0.308s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/maps
+[0.308s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/meshes
+[0.310s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/models
+[0.311s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/params
+[0.311s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/rviz
+[0.314s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/rviz/urdf.rviz
+[0.314s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/rviz/car.rviz
+[0.314s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/src
+[0.315s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/urdf
+[0.315s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/urdf/car.urdf
+[0.316s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/urdf/my_robot.urdf.xacro
+[0.316s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/urdf/inertial_macros.xacro
+[0.323s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/urdf/robot_core.xacro
+[0.335s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/urdf/robot_core_1.xacro
+[0.336s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/worlds
+[0.336s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/worlds/empty.world
+[0.336s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/ament_index/resource_index/package_run_dependencies/my_robot
+[0.337s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/ament_index/resource_index/parent_prefix_path/my_robot
+[0.337s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/environment/ament_prefix_path.sh
+[0.337s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/environment/ament_prefix_path.dsv
+[0.337s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/environment/path.sh
+[0.338s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/environment/path.dsv
+[0.338s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/local_setup.bash
+[0.338s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/local_setup.sh
+[0.349s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/local_setup.zsh
+[0.350s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/local_setup.dsv
+[0.350s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/package.dsv
+[0.350s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/ament_index/resource_index/packages/my_robot
+[0.351s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/cmake/my_robotConfig.cmake
+[0.351s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/cmake/my_robotConfig-version.cmake
+[0.352s] -- Up-to-date: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/package.xml
+[0.361s] Invoked command in '/home/rosdev/ros2_ws/build/my_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rosdev/ros2_ws/build/my_robot

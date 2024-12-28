@@ -1,0 +1,63 @@
+[0.053s] Invoking command in '/home/rosdev/ros2_ws/build/my_robot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rosdev/ros2_ws/src/my_robot -DCMAKE_INSTALL_PREFIX=/home/rosdev/ros2_ws/install/my_robot
+[0.491s] -- The C compiler identification is GNU 11.4.0
+[0.848s] -- The CXX compiler identification is GNU 11.4.0
+[0.893s] -- Detecting C compiler ABI info
+[1.194s] -- Detecting C compiler ABI info - done
+[1.246s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.248s] -- Detecting C compile features
+[1.251s] -- Detecting C compile features - done
+[1.269s] -- Detecting CXX compiler ABI info
+[1.634s] -- Detecting CXX compiler ABI info - done
+[1.682s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.683s] -- Detecting CXX compile features
+[1.684s] -- Detecting CXX compile features - done
+[1.700s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.243s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.739s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.166s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.171s] -- Added test 'lint_cmake' to check CMake code style
+[3.174s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.185s] -- Added test 'xmllint' to check XML markup files
+[3.192s] -- Configuring done
+[3.203s] -- Generating done
+[3.208s] -- Build files have been written to: /home/rosdev/ros2_ws/build/my_robot
+[3.224s] Invoked command in '/home/rosdev/ros2_ws/build/my_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rosdev/ros2_ws/src/my_robot -DCMAKE_INSTALL_PREFIX=/home/rosdev/ros2_ws/install/my_robot
+[3.232s] Invoking command in '/home/rosdev/ros2_ws/build/my_robot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rosdev/ros2_ws/build/my_robot -- -j8 -l8
+[3.386s] Invoked command in '/home/rosdev/ros2_ws/build/my_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rosdev/ros2_ws/build/my_robot -- -j8 -l8
+[3.422s] Invoking command in '/home/rosdev/ros2_ws/build/my_robot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rosdev/ros2_ws/build/my_robot
+[3.452s] -- Install configuration: ""
+[3.454s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/launch
+[3.455s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/launch/my_robot.launch.py
+[3.456s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/launch/gazebo_launch.py
+[3.456s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/config
+[3.457s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/maps
+[3.458s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/meshes
+[3.459s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/models
+[3.460s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/params
+[3.460s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/rviz
+[3.461s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/rviz/urdf.rviz
+[3.462s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/rviz/car.rviz
+[3.462s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/src
+[3.463s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/urdf
+[3.463s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/urdf/car.urdf
+[3.464s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/urdf/my_robot.urdf.xacro
+[3.465s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/urdf/robot_core.xacro
+[3.466s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/urdf/robot_core_1.xacro
+[3.467s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/worlds
+[3.468s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/worlds/empty.world
+[3.470s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/ament_index/resource_index/package_run_dependencies/my_robot
+[3.472s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/ament_index/resource_index/parent_prefix_path/my_robot
+[3.474s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/environment/ament_prefix_path.sh
+[3.475s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/environment/ament_prefix_path.dsv
+[3.476s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/environment/path.sh
+[3.478s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/environment/path.dsv
+[3.479s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/local_setup.bash
+[3.480s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/local_setup.sh
+[3.482s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/local_setup.zsh
+[3.483s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/local_setup.dsv
+[3.484s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/package.dsv
+[3.485s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/ament_index/resource_index/packages/my_robot
+[3.486s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/cmake/my_robotConfig.cmake
+[3.487s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/cmake/my_robotConfig-version.cmake
+[3.488s] -- Installing: /home/rosdev/ros2_ws/install/my_robot/share/my_robot/package.xml
+[3.496s] Invoked command in '/home/rosdev/ros2_ws/build/my_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rosdev/ros2_ws/build/my_robot
