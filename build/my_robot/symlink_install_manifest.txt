@@ -3,8 +3,14 @@
 /home/rosdev/ros2_ws/install/my_robot/share/my_robot/launch/launch_sim.launch.py
 /home/rosdev/ros2_ws/install/my_robot/share/my_robot/launch/launch_sim.launch_1.py
 /home/rosdev/ros2_ws/install/my_robot/share/my_robot/launch/my_robot.launch.py
+/home/rosdev/ros2_ws/install/my_robot/share/my_robot/config/mapper_params_online_async.yaml
 /home/rosdev/ros2_ws/install/my_robot/share/my_robot/config/my_controllers.yaml
+/home/rosdev/ros2_ws/install/my_robot/share/my_robot/maps/my_map_save.pgm
+/home/rosdev/ros2_ws/install/my_robot/share/my_robot/maps/my_map_save.yaml
+/home/rosdev/ros2_ws/install/my_robot/share/my_robot/maps/my_map_serial.data
+/home/rosdev/ros2_ws/install/my_robot/share/my_robot/maps/my_map_serial.posegraph
 /home/rosdev/ros2_ws/install/my_robot/share/my_robot/rviz/car.rviz
+/home/rosdev/ros2_ws/install/my_robot/share/my_robot/rviz/main.rviz
 /home/rosdev/ros2_ws/install/my_robot/share/my_robot/rviz/urdf.rviz
 /home/rosdev/ros2_ws/install/my_robot/share/my_robot/urdf/camera.xacro
 /home/rosdev/ros2_ws/install/my_robot/share/my_robot/urdf/car.urdf

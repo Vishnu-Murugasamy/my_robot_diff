@@ -143,3 +143,9 @@
   143  colcon build --packages-select my_robot
   144  ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.world 
   145  colcon build --packages-select my_robot
+   146  ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.world 
+  147  colcon build --packages-select my_robot
+  148  ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.world 
+  149  colcon build --packages-select my_robot
+  150  ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.world 
+  
