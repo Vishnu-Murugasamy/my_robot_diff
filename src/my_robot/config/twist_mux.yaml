@@ -1,0 +1,13 @@
+twist_mux:
+  ros__parameters:
+    topics:
+      navigation:
+        topic: cmd_vel       # Topic for navigation commands
+        timeout: 0.5             # Timeout in seconds
+        priority: 10             # Lower priority than teleop
+      joystick:
+        topic: cmd_vel_teleop    # Topic for teleop commands
+        timeout: 0.5             # Timeout in seconds
+        priority: 100            # Higher priority for teleop
+    cmd_vel_out: diff_cont/cmd_vel_unstamped         # Output topic for merged velocity commands
+    long_joy_press: 2.0          # Example additional parameter (optional)

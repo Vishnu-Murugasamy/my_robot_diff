@@ -1,4 +1,4 @@
-1  colcon build
+  colcon build
     2  gedit ~/.bashrc
     3  clear
     4  source /opt/ros/humble/setup.bash
@@ -128,7 +128,7 @@
   128  rviz2
   129  colcon build --packages-select my_robot
   130  ros2 launch my_robot launch_sim.launch.py 
-  131* ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.w
+  131  ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.world 
   132  sudo apt install ros-humble-image-transport-pöugins
   133  sudo apt install ros-humble-image-transport-plugins
   134  sudo apt install ros-humble-rqt-imageview
@@ -143,9 +143,108 @@
   143  colcon build --packages-select my_robot
   144  ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.world 
   145  colcon build --packages-select my_robot
-   146  ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.world 
+  146  ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.world 
   147  colcon build --packages-select my_robot
   148  ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.world 
   149  colcon build --packages-select my_robot
   150  ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.world 
-  
+  151  git init
+  152  git add README.md
+  153  got commit -m "ros2_controller"
+  154  git commit -m "ros2_controller"
+  155  git config --global user.email "vishnu.murugasamy@rwth-aachen,de"
+  156  git commit -m "ros2_controller"
+  157  git add all
+  158  git add -all
+  159  git add --all
+  160  git branch -M main
+  161  git remote add origin git@github.com:Vishnu-Murugasamy/my_robot_diff.git
+  162  git push -u origin main
+  163  git init
+  164  git init
+  165  git config --global user.email "vishnu.murugasamy@rwth-aachen.de"
+  166  git config --global user.name "Vishnu"
+  167  git add --all
+  168  git commit -m "Initial commit for ros2_controller"
+  169  git branch -M main
+  170  git remote add origin git@github.com:Vishnu-Murugasamy/my_robot_diff.git
+  171  git push -u origin main
+  172  git remote -v
+  173  ls ~/.ssh/id_rsa.pub
+  174  ssh-keygen -t ed25519 -C "vishnu.murugasamy@rwth-aachen.de"
+  175  ssh -T git@github.com
+  176  cat ~/ros2_ws/ssh_key.pub
+  177  ssh -i ~/ros2_ws/ssh_key -T git@github.com
+  178  git push -u origin main
+  179  git remote add origin git@github.com:Vishnu-Murugasamy/my_robot_diff.git
+  180  git push -u origin main
+  181  nano ~/.ssh/config
+  182  git push -u origin main
+  183  history
+  184  rviz2
+  185  ros2 control list_hardware_interfaces 
+  186  ros2 run controller_manager spawner.py diff_cont 
+  187  sudo apt install ros-humble-ros2-contro ros-humble-ros2-controllers ros-humble-gazebo-ros2-control
+  188  sudo apt install ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-gazebo-ros2-control
+  189  ros2 run controller_manager spawner.py diff_cont 
+  190  ros2 run controller_manager spawner diff_cont
+  191  ros2 run controller_manager spawner.py joint_broad 
+  192  ros2 run controller_manager spawner joint_board
+  193  ros2 run controller_manager spawner joint_broad
+  194  ros2 run teleop_twist_keyboard teleop_twist_keyboard 
+  195  ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-arg -r /cmd_vel:=cmd_vel_unstampted
+  196  ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap /cmd_vel:=cmd_vel_unstampted
+  197  ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap /cmd_vel:=/cmd_vel_unstampted 
+  198  ros2 run controller_manager spawner joint_broad
+  199  ros2 run controller_manager spawner diff_cont
+  200  ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap /cmd_vel:=/diff_cont/cmd_vel_unstamped
+  201  rviz2 
+  202  ros2 topic list
+  203  ros2 topic info /cmd_vel_unstampted 
+  204  ros2 topic list
+  205  ros2 topic info /cmd_vel_unstampted 
+  206  ros2 topic info /diff_count/cmd_vel_unstampted 
+  207  ros2 topic info /diff_cont/cmd_vel_unstamped 
+  208  rviz2 
+  209  rviz2 --help
+  210  rviz2 -d src/my_robot/config/rviz
+  211  rviz2 
+  212  pwd
+  213  pwd
+  214  ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap /cmd_vel:=/diff_cont/cmd_vel_unstamped
+  215  git status
+  216  git add .
+  217  git commit -m "slam and amcl "
+  218  git branch
+  219  git push -u origin main
+  220  sudo apt install ros-humble-slam-toolbox
+  221  cp /opt/ros/humble/share/slam_toolbox/config/mapper_params_online_async.yaml /home/rosdev/ros2_ws/src/my_robot/config/
+  222  colcon build
+  223  ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.world 
+  224  colcon build
+  225  ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.world 
+  226  colcon build
+  227  ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.world 
+  228  sudo apt install ros-humble-navigation2 ros-humble-nav2-bringup ros-humble-turtlebot4-navigation
+  229  ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.world 
+  230  ros2 launch slam_toolbox online_async_launch.py params_file:=./src/my_robot/config/mapper_params_online_async.yaml 
+  231  rviz2 -d src/my_robot/rviz/main.rviz 
+  232  ros2 service list
+  233  ros2 service call /slam_toolbox/serialize_map slam_toolbox/srv/SerializePoseGraph "{filename: '/home/rosdev/maps/my_map_serial_1.data'}"
+  234  ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap "{name: '/home/rosdev/maps/my_map_1'}"
+  235  ros2 service call /slam_toolbox/serialize_map slam_toolbox/srv/SerializePoseGraph "{filename: '/home/rosdev/ros2_ws/src/maps/my_map_serial_1.data'}"
+  236  pwd
+  237  ls
+  238  ros2 run nav2_map_server map_server --ros-args -p yaml_filename:=save_1.yaml 
+  239  ros2 run nav2_map_server map_server --ros-args -p yaml_filename:=save_1.yaml -p use_sim_time:=true
+  240  ros2 run nav2_util lifecycle_bringup map_server
+  241  ros2 run nav2_amcl amcl --ros-arg -p use_sim_time:=true
+  242  ros2 run nav2_amcl amcl 
+  243  ros2 run nav2_util lifecycle_bringup map_server
+  244  ros2 run nav2_amcl amcl --ros-arg -p use_sim_time:=true
+  245  history
+  246  ros2 run nav2_util lifecycle_bringup map_amcl
+  247  ros2 run nav2_util lifecycle_bringup amcl
+  248  historyros2 run twist_mux twist_mux --ros-args --params-file ./src/my_robot/config/twist_mux.yaml -r cmd_vel_out:=diff_cont/cmd_vel_unstamped
+  249  ros2 run twist_mux twist_mux --ros-args --params-file ./src/my_robot/config/twist_mux.yaml -r cmd_vel_out:=diff_cont/cmd_vel_unstamped
+  250  ros2 launch my_robot launch_sim.launch.py world:=./src/my_robot/worlds/obstacies.world 

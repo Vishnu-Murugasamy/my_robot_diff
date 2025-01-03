@@ -22,7 +22,7 @@ slam_toolbox:
     # will use pose
     map_file_name: /home/rosdev/ros2_ws/serial_1
     # map_start_pose: [0.0, 0.0, 0.0]
-    map_start_at_dock: true
+    #map_start_at_dock: true
 
     debug_logging: false
     throttle_scans: 1
